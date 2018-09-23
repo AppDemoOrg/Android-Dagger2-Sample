@@ -29,13 +29,13 @@ public class DemoApplication extends Application {
     public void onCreate() {
         super.onCreate();
         applicationComponent = DaggerApplicationComponent
-                                    .builder()
-                                    .applicationModule(new ApplicationModule(this))
-                                    .build();
+                .builder()
+                .applicationModule(new ApplicationModule(this))
+                .build();
         applicationComponent.inject(this);
     }
 
-    public ApplicationComponent getComponent(){
+    public ApplicationComponent getComponent() {
         return applicationComponent;
     }
 }

@@ -33,7 +33,7 @@ public class DataManager {
         mSharedPrefsHelper.put(SharedPrefsHelper.PREF_KEY_ACCESS_TOKEN, accessToken);
     }
 
-    public String getAccessToken(){
+    public String getAccessToken() {
         return mSharedPrefsHelper.get(SharedPrefsHelper.PREF_KEY_ACCESS_TOKEN, null);
     }
 
