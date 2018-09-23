@@ -1,10 +1,12 @@
-package com.mindorks.example.android_dagger2_example.data;
+package com.mindorks.example.dagger.data;
 
 import android.content.Context;
 import android.content.res.Resources;
 
-import com.mindorks.example.android_dagger2_example.data.model.User;
-import com.mindorks.example.android_dagger2_example.di.ApplicationContext;
+import com.mindorks.example.dagger.data.db.DbHelper;
+import com.mindorks.example.dagger.data.bean.User;
+import com.mindorks.example.dagger.data.prefs.SharedPrefsHelper;
+import com.mindorks.example.dagger.di.annotation.ApplicationContext;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;

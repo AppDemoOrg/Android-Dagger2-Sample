@@ -1,4 +1,4 @@
-package com.mindorks.example.android_dagger2_example.data;
+package com.mindorks.example.dagger.data.db;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -8,9 +8,9 @@ import android.database.SQLException;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.mindorks.example.android_dagger2_example.data.model.User;
-import com.mindorks.example.android_dagger2_example.di.ApplicationContext;
-import com.mindorks.example.android_dagger2_example.di.DatabaseInfo;
+import com.mindorks.example.dagger.data.bean.User;
+import com.mindorks.example.dagger.di.annotation.ApplicationContext;
+import com.mindorks.example.dagger.di.annotation.DatabaseInfo;
 
 import javax.inject.Inject;
 import javax.inject.Singleton;
@@ -65,7 +65,7 @@ public class DbHelper extends SQLiteOpenHelper {
         }
     }
 
-    protected User getUser(Long userId) throws Resources.NotFoundException, NullPointerException {
+    public User getUser(Long userId) throws Resources.NotFoundException, NullPointerException {
         Cursor cursor = null;
         try {
             SQLiteDatabase db = this.getReadableDatabase();
@@ -98,7 +98,7 @@ public class DbHelper extends SQLiteOpenHelper {
         }
     }
 
-    protected Long insertUser(User user) throws Exception {
+    public Long insertUser(User user) throws Exception {
         try {
             SQLiteDatabase db = this.getWritableDatabase();
             ContentValues contentValues = new ContentValues();

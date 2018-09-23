@@ -1,4 +1,4 @@
-package com.mindorks.example.android_dagger2_example.data.model;
+package com.mindorks.example.dagger.data.bean;
 
 /**
  * Created by janisharali on 25/12/16.
