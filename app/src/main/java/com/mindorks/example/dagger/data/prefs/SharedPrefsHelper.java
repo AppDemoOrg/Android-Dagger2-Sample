@@ -1,4 +1,4 @@
-package com.mindorks.example.android_dagger2_example.data;
+package com.mindorks.example.dagger.data.prefs;
 
 import android.content.SharedPreferences;
 
@@ -13,7 +13,6 @@ import javax.inject.Singleton;
 public class SharedPrefsHelper {
 
     public static String PREF_KEY_ACCESS_TOKEN = "access-token";
-
     private SharedPreferences mSharedPreferences;
 
     @Inject
@@ -56,4 +55,5 @@ public class SharedPrefsHelper {
     public void deleteSavedData(String key) {
         mSharedPreferences.edit().remove(key).apply();
     }
+
 }

@@ -1,12 +1,11 @@
-package com.mindorks.example.android_dagger2_example.di.module;
+package com.mindorks.example.dagger.di.module;
 
 import android.app.Application;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.database.sqlite.SQLiteDatabase;
 
-import com.mindorks.example.android_dagger2_example.di.ApplicationContext;
-import com.mindorks.example.android_dagger2_example.di.DatabaseInfo;
+import com.mindorks.example.dagger.di.annotation.ApplicationContext;
+import com.mindorks.example.dagger.di.annotation.DatabaseInfo;
 
 import dagger.Module;
 import dagger.Provides;

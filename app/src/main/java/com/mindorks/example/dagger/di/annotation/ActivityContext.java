@@ -1,4 +1,4 @@
-package com.mindorks.example.android_dagger2_example.di;
+package com.mindorks.example.dagger.di.annotation;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -6,10 +6,11 @@ import java.lang.annotation.RetentionPolicy;
 import javax.inject.Qualifier;
 
 /**
- * Created by janisharali on 08/12/16.
+ * Created by janisharali on 25/12/16.
  */
 
 @Qualifier
 @Retention(RetentionPolicy.RUNTIME)
-public @interface DatabaseInfo {
+public @interface ActivityContext {
+
 }

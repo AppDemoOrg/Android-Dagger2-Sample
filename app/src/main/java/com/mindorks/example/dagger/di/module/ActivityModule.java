@@ -1,9 +1,9 @@
-package com.mindorks.example.android_dagger2_example.di.module;
+package com.mindorks.example.dagger.di.module;
 
 import android.app.Activity;
 import android.content.Context;
 
-import com.mindorks.example.android_dagger2_example.di.ActivityContext;
+import com.mindorks.example.dagger.di.annotation.ActivityContext;
 
 import dagger.Module;
 import dagger.Provides;

@@ -1,4 +1,4 @@
-package com.mindorks.example.android_dagger2_example;
+package com.mindorks.example.dagger;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
